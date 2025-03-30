@@ -24,9 +24,9 @@
 }
 .g
 {
-  width: 410px;
+ max-width: 550px; 
   height: 230px;
- 
+  width: 100%;
 }
 .g 
 {
@@ -36,14 +36,43 @@
 .g:hover{
   transform: scale(0.9);
 }
+.ga{
+  max-width: 650px; 
+  height: 230px;
+  width: 100%;
+}
+.ga{
+  transition: 0.9s;
+}
+.ga:hover {
+ transform: scale(0.9);
+}
+.ii{
+  position: absolute;
+  font-size: 55px;
+  font-weight: 700; 
+ bottom: -35%;
+  left: 10%;
+  content: '';
+  color: #fff;
 
+}
+.cls{
+  position: absolute;
+  font-size: 45px;
+  font-weight: 700; 
+ bottom: 30%;
+  left: 9%;
+  content: '';
+  color: #fff;
+}
 .h
 {
   background-color: #F8F8F8;
 }
 .j
 {
-  width: 620px;
+  max-width: 620px;
   height: 350px;
 }
 .k
@@ -61,10 +90,9 @@
 }
 .n
 {
-  width: 300px;
+  max-width: 500px;
+  width: 100%;
   height: 200px;
-  position: relative;
-
 }
 .n {
   transition: 0.9s;
@@ -116,7 +144,20 @@
   left: 8%;
   bottom: -25%;
 }
+.rrr{
+  position: absolute;
+  left: 10%;
+  bottom: -40%;
+}
+.Ho{
+  position: absolute;
+  left: 10%;
+  bottom: 40%;
+}
 .pp{
+  color: #EB8203;
+}
+.sp{
   color: #EB8203;
 }
 .pq
@@ -137,7 +178,7 @@
   color: #eb8102;
   position: absolute;
   left: 10%;
-    top: 60%; 
+    top: 43%; 
     font-size: 50px;
     font-weight: 900;
     line-height: 55px;
@@ -146,7 +187,7 @@
 {
   position: absolute;
   left: 10%;
-    top: 53%; 
+    top: 35%; 
     font-size: 50px;
     font-weight: 900;
     line-height: 60px;
@@ -156,16 +197,21 @@
 .cc{
   position: absolute;
   left: 10%;
-    top: 70%; 
+    top: 52%; 
     color: #ddd;
 }
 .dd{
   position: absolute;
   left: 10%;
- bottom: 4%;
+ bottom: 15%;
  background: #FFFFFF;
- width: 1230px;
+ max-width: 1230px;
+ width: 100%;
  height: 120px;
+}
+
+@media (max-width: 550px) {
+  .dd{ left: 0;}
 }
 .t{
 color: #EB8102;
@@ -218,6 +264,8 @@ body {
   display: block;
   margin-bottom: 10px;
 }
+
+
 
 
  

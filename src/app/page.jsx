@@ -1,10 +1,11 @@
+import Link from 'next/link'
 import React from 'react'
 
 
 function page() {
   return (
     <>
-       <section className='py-5'>
+      <section className=''>
         <img className='xy' src="https://vajraadventure.com/storage/Short%20Hiking/short-hiking-1.jpg" alt="" />
         <h2 className=' bb'>Affordable Trekking</h2>
         <h1 className='aa'> Adventures</h1>
@@ -19,13 +20,13 @@ function page() {
             </div>
           </form>
         </div>
-      </section> 
+      </section>
 
-      <section className='py-4 h'>
+      <section className='p-5 h'>
         <div className="container">
           <div className="row">
             <div className="col-lg-7">
-              <h2>Popular Packages</h2>
+            <h2>Popular Packages</h2>
             </div>
             <div className="col-lg-5">
               <h4 className='text-end t'>View All</h4>
@@ -33,32 +34,43 @@ function page() {
           </div>
         </div>
       </section>
-
+       
       <section className='h'>
-        <div className="container">
+      <div className="container">
           <div className="row">
             <div className="col-lg-4 shadow">
               <img className='g rounded' src="https://vajraadventure.com/storage/Poon-hill-yoga-trek/poon-hill.jpg" alt="" />
-              <h6 className='py-3'>Mardi Himal Yoga Trek | Find Your Inner Peace</h6>
-              <p>12 days</p>
-              <h5>USD 1,299/person</h5>
+              <Link className='text-decoration-none' href={'/12days'}>
+              <h6 className='py-2  text-dark'>Mardi Himal Yoga Trek | Find Your Inner Peace</h6>
+              </Link>
+              <p className='text-dark'>12 days</p>
+              <div className="row">
+                <div className="col-lg-6">
+                <h5 className='text-dark'>USD 1,299 / person</h5>
+                </div>
+                <div className="col-lg-6 text-end mb-5">
+                <Link className='text-decoration-none' href={'/12days'}>
+                  <button className='btn bg-primary '>Book now</button>
+                  </Link>
+                </div>
+              
+              </div>
+            
             </div>
-            <div className="col-lg-4 p-4 shadow">
-              <img className='g  rounded' src="https://vajraadventure.com/storage/annapurna/annapurna-sanctuary-trek-img.jpg" alt="" />
-              <h6 className='py-3'>Annapurna Base Camp via Poon Hill (Sanctuary Trek)</h6>
-              <p>15 days</p>
-
-              <h5>USD 1,099 / person</h5>
-            </div>
-            <div className="col-lg-4 p-4 shadow">
-              <img className='g  rounded ' src="https://vajraadventure.com/storage/everest/everest-base-camp-4.jpg" alt="" />
-              <h6 className='py-3'>Everest Base Camp Trek via Gokyo Lakes</h6>
+            <div className="col-lg-4 shadow">
+              <img className='g rounded' src="https://vajraadventure.com/storage/annapurna/annapurna-sanctuary-trek-img.jpg" alt="" />
+              <h6 className='py-2'>Everest Base Camp Trek via Gokyo Lakes</h6>
               <p>18 days</p>
-              <h5>USD 1,799 / person</h5>
+              <h6>USD 1,799 / person</h6>
+            </div>
+            <div className="col-lg-4 shadow">
+              <img className='g rounded' src="https://vajraadventure.com/storage/everest/everest-base-camp-4.jpg" alt="" />
+              <h6 className='py-2'>Annapurna Base Camp via Poon Hill (Sanctuary Trek)</h6>
+              <p>15 days</p>
+              <h5>USD 1,099 / person</h5>
             </div>
           </div>
         </div>
-      
       </section>
 
       <section className='py-5'>
@@ -127,12 +139,12 @@ function page() {
                   "I did the Mardi Himal trek at the recommendation of Govin. He is a fully independent Nepalese guide..."
                 </p>
                 <div className='border-top'>
-                <a>Show more</a>
-              </div>
+                  <a>Show more</a>
+                </div>
               </div>
             </div>
             <div class="col-lg-4">
-            <div class="review-card">
+              <div class="review-card">
                 <img className='k' src="https://lh3.googleusercontent.com/a-/ALV-UjUkdz10IYXeVHNiVtiOc6-bf9us_f5SZkp4wDOhw6GoX1b7q9PP=s128-c0x00000000-cc-rp-mo-ba4" alt="" />
                 <h5>Ebrahim QA</h5>
                 <p class="text-muted">2025-01-23 01:09:04 PM</p>
@@ -140,14 +152,15 @@ function page() {
                 <p class="text-muted mt-2">
                   "Had an amazing lifetime experience with Mr. Govin to Everest Base Camp that wouldn't be successful without..."
                 </p>
-                <div  className='border-top'>
-                <a>Show more</a>
+                <div className='border-top'>
+                  <a>Show more</a>
                 </div>
               </div>
             </div>
           </div>
-          </div>
+        </div>
       </section>
+
       <section className='py-4'>
         <div className="container">
           <h2 className='py-4'>Travel by Interest </h2>
